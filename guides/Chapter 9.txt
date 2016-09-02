@@ -1,0 +1,23 @@
+Read and write data from console
+Read and write to files using Streams using java.io package
+	BufferedReader
+	BufferedWriter
+	File
+	FileReader
+	FileWriter
+	DataInputStream
+	DataOutputStream
+	ObjectInputStream
+	ObjectOutputStream
+	PrintWriter
+
+Operate on File and Directory paths with Path Class
+Check, delete, move, copy with Files class
+
+Read and change file and directory attributes, with BasicFileAttributes, DosFileAttributes and PosixFileAttributes
+
+Recursively Access a Directory Tree using DirectoryStream and FileVisitors
+
+
+
+
