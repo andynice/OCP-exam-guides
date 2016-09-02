@@ -19,5 +19,26 @@ Read and change file and directory attributes, with BasicFileAttributes, DosFile
 Recursively Access a Directory Tree using DirectoryStream and FileVisitors
 
 
+API
+	File: for higher level use, paths, new empty files, search, delete, making directories. Not used for write or read data.
 
+	FileReader: wrapped by BufferedReder(higher level object), its read() methods are used to read single characters, all characters or a fixed number of characters from files.
+
+	BufferedReader: use reader classes (like FileReader) easy and efficient to use. Read larger chunks of data, keeping them in a buffer. The petitions of more data are made to the buffer. Provides readLine() method.
+
+	FileWriter: low-level object, let us write characters or strings to files. Usually wrapped by BufferedWriter and PrintWriter.
+
+	BufferedWiter: use FileWriter, in a more efficient way. Provides a newLine() method, to createa a platform-specific line separators.
+
+	PrintWriter: It has been enhanced, constructors based on File and Strings, it's possible to use PrintWriter, instead ofBufferedWriter. format(), printf(), append(). Flexible and powerful
+
+	Console: read input and write foormated output to console.
+
+Streams are used to write or read bytes, while Readers and writers are used for character files. Anything with the word "stream" is related to serialization or unrelated to I/O objective
+
+Creating Files using the File class
+	new File() doesn't create a file on the disk! 
+	boolean exists() This method returns true if it can find the actual file.
+	boolean createNewFile() This method creates a new file if it doesn't
+	already exist.
 
